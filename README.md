@@ -1,1 +1,1 @@
-# tutorials
+# Repository for tutorials from [CodeSimplic](https://www.youtube.com/c/CodeSimplic)
