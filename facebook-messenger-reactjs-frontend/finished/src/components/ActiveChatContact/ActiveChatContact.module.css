@@ -1,0 +1,27 @@
+.statusIndicator {
+  top: 42px;
+  left: 50px;
+  border: 3px solid #f8fffe;
+}
+
+.contactInChat {
+  padding: 10px;
+}
+
+.chatHeaderDescription {
+  flex: 2 !important;
+  padding: 5px;
+}
+
+.avatarHeader {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  min-width: 90px;
+}
+
+.subtitle {
+  font-size: 10px;
+  margin-top: 0px;
+}
