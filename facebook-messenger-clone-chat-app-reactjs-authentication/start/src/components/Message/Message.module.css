@@ -1,0 +1,60 @@
+
+.userAvatarContainer {
+  padding: 20px 0 0 0;
+  min-width: 110px;
+  border-bottom: 1px solid #F5F5F7;
+}
+
+.name {
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.blue {
+  background-color: #44a2f8;
+  border-radius: 20px;
+}
+
+.messageText {
+  font-weight: bold;
+  max-width: 300px;
+  height: auto;
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+.messageRight {
+  align-self: flex-end;
+  margin-top: 20px;
+}
+
+.darkGrey {
+  background-color: #F5F5F7;
+  border: 1px solid #F5F5F7;
+  border-radius: 20px;
+  color: #556080;
+  margin-left: 10px;
+}
+
+.messageLeft {
+  align-self: flex-start;
+  margin-top: 20px;
+}
+
+
+.time {
+  text-align: right;
+  margin: 0 50px 0 0;
+  color: #556080;
+}
+
+.timeLeft {
+  text-align: left;
+  margin: 0 0 0 60px;
+  color: #556080;
+}
