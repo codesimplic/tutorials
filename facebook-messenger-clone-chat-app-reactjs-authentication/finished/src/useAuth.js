@@ -22,41 +22,29 @@ function useProvideAuth() {
         localStorage.getItem('loggedIn') === 'true'
     );
 
-    const login = async(username, password, cb) => {
-        const data = {username, password};
+    const onSubmit = async () => {
+        const data = {email, password};
 
-        const url = "http://localhost:3000/api/login";
+        const url = 'http://localhost:3000/api/login';
         const options = {
-            method: 'POST',
-            headers: {
-               'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data)
-        };
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        }
 
         const response = await fetch(url, options);
         const decodedResponse = await response.json();
 
-        if (response.status === 401) {
-
-            localStorage.setItem('loggedIn', 'false');
-            setLoggedIn(false);
-            setError(decodedResponse.message);
-
-            return false;
+        setError('')
+        if (decodedResponse.error) {
+          return setError(decodedResponse.error)
         }
 
         if (response.status === 200) {
-            localStorage.setItem('loggedIn', 'true');
-            setLoggedIn(true);
-            setError(null);
-            setUsername(decodedResponse.username);
-            setUserId(decodedResponse.userId);
-            setUser(decodedResponse);
-
-            console.log('>>> Log in', decodedResponse);
-
-            return true;
+          let from = location.state?.from?.pathname || "/chat";
+          navigate(from, { replace: true });
         }
     }
 
