@@ -1,0 +1,33 @@
+
+.sendMessagesPanel {
+    display: flex;
+    padding: 5px 0 5px 0;
+  }
+  
+  
+.uploadIcon {
+    padding: 5px 5px 0 5px;
+    cursor: pointer;
+  }
+  
+.uploadIconFile {
+    display: none;
+}
+
+.chatInput {
+    border-radius: 30px;
+    background-color: #F5F5F7;
+    color: #556080;
+    position: relative;
+    border: 0px solid;
+    padding: 10px 0 10px 5px;
+    width: 100%;
+  }
+  
+  .sendButton {
+    padding-left: 5px;
+  }
+  
+  .inputContainer {
+      flex-grow: 1;
+  }

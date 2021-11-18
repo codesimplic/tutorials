@@ -1,0 +1,10 @@
+.input {
+  background-color: rgba(0, 0, 0, .04);
+  color: rgba(0, 0, 0, 1);
+  padding: 10px 0 10px 10px;
+  border-radius: 15px;
+  border: none;
+  margin: 5px 0 5px 0;
+  width: 100%;
+  box-sizing: border-box; /*To not streach input above the maximum 100% width*/
+}
